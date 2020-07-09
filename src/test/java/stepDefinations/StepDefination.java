@@ -88,9 +88,10 @@ public class StepDefination extends Utils{
 		@Given("Delete Place Payload")
 		public void delete_place_payload() throws IOException {
 		reqs = given().spec(requestSpecification()).body(data.deletePlacePayload(place_id));
+		System.out.println(reqs);
 		}
 
-
+	
 
 
 
